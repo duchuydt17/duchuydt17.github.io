@@ -1,0 +1,39 @@
+* {
+    background-color: aliceblue;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+nav * {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: bisque;
+}
+
+li {
+    background-color: white;
+}
+
+h1 {
+    color: yellow;
+    background-color: black;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer * {
+    color: yellow;
+    background-color: black;
+}
