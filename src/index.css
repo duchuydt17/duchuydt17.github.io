@@ -1,4 +1,150 @@
-:root {
+@layer properties {}
+
+@layer theme {
+  :root {
+    background-color: var(--background-color);
+    color: var(--tertiary-color);
+
+    --background-color: #081F37;
+    --primary-color: #0077C0;
+    --secondary-color: #C7EEFF;
+    --tertiary-color: #FAFAFA;
+
+    --spacing: .25rem;
+  }
+
+  h1,
+  h2,
+  a,
+  pre,
+  li,
+  span,
+  p {
+    font-family: "Exo 2", sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer utilities {
+
+  .absolute {
+    position: absolute;
+  }
+
+  .fixed {
+    position: fixed;
+  }
+
+  .inline-block {
+    display: inline-block;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .flex-center {
+    justify-content: center;
+  }
+
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  .h-screen {
+    height: 100vh;
+  }
+
+  .inset-0 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .list-none {
+    list-style: none;
+  }
+
+  .text-max {
+    font-size: 100vh;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-decoration-none {
+    text-decoration: none;
+  }
+
+  .text-white {
+    color: #FAFAFA;
+  }
+
+  .test {
+    padding-right: calc(var(--spacing) * 1);
+    padding-left: calc(var(--spacing) * 1);
+  }
+
+  .pt-0 {
+    padding-top: 0;
+  }
+
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+
+  .pr-1 {
+    padding-right: calc(var(--spacing) * 1);
+  }
+
+  .pb-0 {
+    padding-bottom: 0;
+  }
+
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
+
+  .pl-1 {
+    padding-left: calc(var(--spacing) * 1);
+  }
+
+  .background {
+    z-index: -10;
+    color: rgba(199, 238, 255, 0.1);
+    user-select: none;
+    padding-bottom: calc(var(--spacing) * 20);
+    ;
+  }
+}
+
+
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +211,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

@@ -1,33 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// import './App.css'
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <header className="fixed w-full flex flex-end items-center test pt-5 pr-1 pb-5 pl-1">
+        <nav>
+          <ul className="list-none">
+            <li className="inline-block pt-0 pr-1 pb-0 pl-1"><a className="text-decoration-none text-white" href="#">Main</a></li>
+            <li className="inline-block pt-0 pr-1 pb-0 pl-1"><a className="text-decoration-none text-white" href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div className="fixed inset-0 w-full h-screen flex items-center justify-center background ">
+        <p className="text-max">輝</p>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="h-screen text-center flex flex-col flex-center">
+        <h1 className="">Hi, I'm Burg!</h1>
+        <p>A lonewalker.</p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
