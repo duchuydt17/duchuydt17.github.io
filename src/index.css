@@ -34,6 +34,10 @@
 
 @layer utilities {
 
+  .bg-black {
+    background-color: #081F37;
+  }
+
   .absolute {
     position: absolute;
   }
@@ -50,6 +54,14 @@
     display: flex;
   }
 
+  .grid {
+    display: grid;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .flex-col {
     flex-direction: column;
   }
@@ -60,6 +72,10 @@
 
   .flex-end {
     justify-content: flex-end;
+  }
+
+  .h-14 {
+    height: calc(var(--spacing) * 14);
   }
 
   .h-screen {
@@ -105,6 +121,10 @@
     color: #FAFAFA;
   }
 
+  .text-dark {
+    color: #081F37;
+  }
+
   .test {
     padding-right: calc(var(--spacing) * 1);
     padding-left: calc(var(--spacing) * 1);
@@ -140,6 +160,26 @@
     user-select: none;
     padding-bottom: calc(var(--spacing) * 20);
     ;
+  }
+
+  .bg-tertiary {
+    background-color: #FAFAFA;
+  }
+
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+
+  .z-50 {
+    z-index: 50;
   }
 }
 
